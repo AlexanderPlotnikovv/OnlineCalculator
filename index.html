@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Online Calculator</h1>
+    </div>
+    <div class="inputText">
+        <p>Enter first number:</p>
+        <p>Enter second number:</p>
+    </div>
+    <div class="enterFields">
+        <form action="index.html" method="post" id="act">
+            <input type="number" id="firstNum" name="calc_first_num" class="large-input" value="0">
+            <input type="number" id="secondNum" name="calc_second_num" class="large-input"value="0">
+        </form>
+    </div>
+    <div class="operationsClearLoading">
+        <button class="button" id="s" name="sum"><img src="plus.png" width="35" alt=""></button>
+        <button class="button" id="df" name="dif"><img src="dif.png" width="35" alt=""></button>
+        <button class="button" id="m" name="mul"><img src="mul.png" width="35" alt=""></button>
+        <button class="button" id="dv" name="div"><img src="div.png" width="35" alt=""></button>
+        <button class="button" id="l" name="load">Load</button>
+        <button class="button" id="c" name="clear">Clear</button>
+    </div>
+    <div class="answer">
+        <h4>Result: </h4>
+        <p id="res"></p>
+    </div>
+    <script src="file.js"></script>
+</body>

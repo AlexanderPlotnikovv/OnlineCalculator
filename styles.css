@@ -1,0 +1,92 @@
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    background-color: rgb(46, 47, 59);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(214, 147, 66);
+    padding: 10px;
+}
+
+.inputText {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.enterFields {
+    display: flex; /* Использует Flexbox для размещения полей ввода в одну строку */
+    justify-content: space-between; /* Распределяет пространство между полями */
+    
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Форму можно расширить на всю ширину контейнера */
+}
+
+.large-input {
+    width: 1200px;
+    height: 150px; /* Высота поля ввода */
+    font-size: 48px;
+    text-align: center;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    display: flex;
+    width: 1200px;
+    height: 50px; /* Высота кнопок */
+    border: 5px solid #ccc; /* Граница */
+    border-radius: 5px; /* Скругленные углы */
+    background-color: #fff; /* Фоновый цвет */
+    cursor: pointer; /* Изменение курсора при наведении */
+    align-items: center;
+    justify-content: space-around; /* Выравнивание текста по центру кнопки */
+    font-size: xx-large;
+    
+}
+
+.operationsClearLoading {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 75px;
+    justify-content: center;
+    max-width: 620px; /* Максимальная ширина контейнера */
+    margin-left: auto; /* Центрирование по горизонтали с помощью автоматических отступов */
+    margin-right: auto; /* Центрирование по горизонтали с помощью автоматических отступов */
+}
+
+.button:active {
+    transform: scale(1.05);
+}
+
+.answer {
+    background-color: white;
+    text-align: center;
+    margin: 50px 1100px;
+    border-radius: 5px;
+    border: 5px solid #ccc;
+    height: 200px;
+}
